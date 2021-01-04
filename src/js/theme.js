@@ -7,9 +7,9 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
-themeRef.addEventListener('change', HandlerSwitchChange);
+themeRef.addEventListener('change', handlerSwitchChange);
 
-function HandlerSwitchChange(event) {
+function handlerSwitchChange(event) {
   bodyRef.classList.toggle(Theme.LIGHT);
   bodyRef.classList.toggle(Theme.DARK);
   if (event.target.checked) {
